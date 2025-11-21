@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умная Библиотека</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        h1 {
+            color: #4f46e5;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 1.2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #4f46e5;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f0fdf4;
+            border-radius: 10px;
+            border: 2px solid #10b981;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #065f46;
+            display: block;
+        }
+
+        .stat-label {
+            color: #047857;
+            font-size: 0.9rem;
+        }
+
+        .message {
+            text-align: center;
+            padding: 2rem;
+            background: #fef3c7;
+            border-radius: 10px;
+            border: 2px solid #f59e0b;
+            margin-top: 2rem;
+        }
+
+        .message h3 {
+            color: #92400e;
+            margin-bottom: 1rem;
+        }
+
+        .message p {
+            color: #b45309;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Умная Библиотека</h1>
+            <p class="subtitle">Ваш персональный помощник в мире книг</p>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🎯 Умные рекомендации</h3>
+                <p>Получайте персональные рекомендации книг на основе ваших предпочтений и прочитанных произведений.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📊 Детальная статистика</h3>
+                <p>Отслеживайте свой прогресс чтения, анализируйте любимые жанры и ставьте цели.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🔍 Умный поиск</h3>
+                <p>Быстрый поиск по вашей библиотеке с фильтрацией по жанрам, авторам и статусу прочтения.</p>
+            </div>
+
+</div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Функции</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Бесплатно</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">📱</span>
+                <span class="stat-label">Адаптивный дизайн</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">⚡</span>
+                <span class="stat-label">Быстрая работа</span>
+            </div>
+        </div>
+
+        <div class="message">
+            <h3>🚀 React версия готова!</h3>
+            <p>Полная React версия проекта находится в папке src/. Для её запуска необходимо установить Node.js и выполнить команды:<br>
+            <strong>npm install</strong> и <strong>npm start</strong></p>
+            <p>Эта HTML версия демонстрирует основной дизайн и функционал проекта.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const featureCards = document.querySelectorAll('.feature-card');
+            
+            featureCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-5px)';
+                    }, 150);
+                });
+            });
+
+            const elements = document.querySelectorAll('.feature-card, .stat-item');
+            elements.forEach((element, index) => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    element.style.transition = 'all 0.5s ease';
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

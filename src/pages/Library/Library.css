@@ -1,0 +1,134 @@
+.library-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.library-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.library-header h1 {
+  color: #1f2937;
+  font-size: 2.5rem;
+}
+
+.add-book-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  border: 2px solid #e5e7eb;
+}
+
+.add-book-form h3 {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.add-book-form input,
+.add-book-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.add-book-form input:focus,
+.add-book-form textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.add-book-form textarea {
+  height: 100px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.search-filter-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.filter-section {
+  min-width: 200px;
+}
+
+.genre-filter {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.genre-filter:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.no-books {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.no-books p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .library-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .library-header h1 {
+    font-size: 2rem;
+  }
+  
+  .search-filter-section {
+    flex-direction: column;
+  }
+  
+  .search-box,
+  .filter-section {
+    min-width: 100%;
+  }
+}

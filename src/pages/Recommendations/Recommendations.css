@@ -1,0 +1,63 @@
+.recommendations-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recommendations-page h1 {
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+.recommendation-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.recommendation-section h2 {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.reading-list-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.reading-list-section h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.empty-message {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 10px;
+  border: 2px dashed #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .recommendations-page h1 {
+    font-size: 2rem;
+  }
+  
+  .recommendation-section,
+  .reading-list-section {
+    padding: 1.5rem;
+  }
+}
