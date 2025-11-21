@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SMART-LIBRARY/static/css/main.9b7e5c55.css",
+    "main.js": "/SMART-LIBRARY/static/js/main.07e5f0b3.js",
+    "index.html": "/SMART-LIBRARY/index.html",
+    "main.9b7e5c55.css.map": "/SMART-LIBRARY/static/css/main.9b7e5c55.css.map",
+    "main.07e5f0b3.js.map": "/SMART-LIBRARY/static/js/main.07e5f0b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b7e5c55.css",
+    "static/js/main.07e5f0b3.js"
+  ]
+}
